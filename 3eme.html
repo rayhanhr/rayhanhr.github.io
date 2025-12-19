@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Night Burger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Le 3ème Thionville</h1>
+    <p>Livraison de burgers de nuit</p>
+  </header>
+
+  <main>
+    <h2>Passer commande</h2>
+
+    <form id="orderForm">
+      <input type="text" id="nom" placeholder="Nom" required>
+      <input type="tel" id="tel" placeholder="Téléphone" required>
+      <input type="text" id="adresse" placeholder="Adresse" required>
+
+      <select id="burger">
+        <option value="8.9">Classic Night – 8,90 €</option>
+        <option value="10.5">Smoky Bacon – 10,50 €</option>
+        <option value="9.5">Chicken Moon – 9,50 €</option>
+      </select>
+
+      <input type="number" id="quantite" value="1" min="1">
+
+      <select id="paiement">
+        <option>Espèces</option>
+        <option>Carte bancaire</option>
+      </select>
+
+      <p>Total : <span id="total">8.90</span> €</p>
+
+      <button type="submit">Envoyer la commande</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
